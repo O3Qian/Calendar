@@ -1,0 +1,84 @@
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: url('images/cat.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.calendar {
+    height: 500px;
+    width: 500px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    color: aliceblue;
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.calendar-header {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.month-picker {
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.year-picker {
+    display: flex;
+    align-items: center;
+}
+
+.year-change {
+    width: 200px;
+    border-radius: 50px;
+    display: grid;
+    place-items: grid;
+    place-items: center;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.calendar-week-day {
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: 600;
+    color: aliceblue;
+    place-items: center;
+}
+
+.calendar-week-day div {
+    display: grid;
+    color: aliceblue;
+    place-items: center;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.calendar-days div {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    position: relative;
+    cursor: pointer;
+    animation: to-top 1s forwards;
+    border-radius: 50%;
+
+}
